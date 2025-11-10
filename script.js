@@ -5,6 +5,7 @@ function switchTheme() {
   const cards = document.querySelectorAll('.card')
   const tables = document.querySelectorAll('.table')
   const cardcolumn = document.querySelectorAll('.column')
+  const footertext = document.querySelector('.navbar-text')
 
   navbar.classList.remove('navbar-light', 'bg-light')
   navbar.classList.add('navbar-dark', 'bg-dark')
@@ -21,4 +22,8 @@ function switchTheme() {
     card.classList.remove('col')
     card.classList.add('col-12')
   })
+
+  footertext.style.paddingLeft = '1700px'
+  footertext.style.display = 'block'
+  footertext.classList.add('text-white')
 }
